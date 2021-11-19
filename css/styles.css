@@ -1,0 +1,98 @@
+:root{
+
+	/* COLORS */
+
+		/* PRIMARY */
+
+	--strongCyan: hsl(171, 66%, 44%);
+	--lightBlue: hsl(233, 100%, 69%);
+
+		/* NEUTRAL */
+
+	--darkGrayishBlue: hsl(210, 10%, 33%);
+	--grayishBlue: hsl(201, 11%, 66%);
+
+	/* FONT */
+
+	--baiJamjuree: 'Bai Jamjuree', sans-serif;
+
+
+}
+
+/* GLOBAL */
+
+*{
+	margin: 0 auto;
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body{
+	font-family: var(--baiJamjuree);
+}
+
+h1{
+	font-size: 4.5rem;
+	margin: 0 auto;
+	color: var(--darkGrayishBlue);
+}
+
+h2{
+	font-size: 2.5rem;
+}
+
+p, .btn{
+	font-size: 1.8rem;
+	color: var(--grayishBlue);
+}
+
+
+/* UTILITIES */
+
+/* HEADER */
+
+.header{
+	background-image: url('../img/bg-header-desktop.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4rem;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+
+.buttons{
+	display: flex;
+	gap: 2rem;
+}
+
+.btn{
+	padding: 1.2rem 3rem ;
+	border-radius: 5rem;
+	cursor: pointer;
+	transition: all .3s ease-in;
+}
+
+.btn:hover{
+	opacity: .7;
+}
+
+.ios{
+	background-color: var(--strongCyan);
+	color: #FFF;
+}
+
+.mac{
+	background-color: var(--lightBlue);
+	color: #FFF;
+}
+
