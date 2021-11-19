@@ -41,7 +41,13 @@ h1{
 }
 
 h2{
+	font-size: 3.5rem;
+	color: var(--darkGrayishBlue);
+}
+
+h3{
 	font-size: 2.5rem;
+	color: var(--darkGrayishBlue);
 }
 
 p, .btn{
@@ -96,3 +102,153 @@ p, .btn{
 	color: #FFF;
 }
 
+/* SNIPPETS SECTION */
+
+.snippets{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-bottom: 12rem;
+}
+
+.snippets p{
+	text-align: center;
+	line-height: 1.5;
+}
+
+.snippets_flexbox{
+	margin-top: 5rem;
+	display: flex;
+	align-items: center;
+}
+
+.snippets__img{
+	position: relative;
+	left: -14rem;
+}
+
+.snippets__info{
+	max-width: 40rem;
+	text-align: left;
+}
+
+.snippets__info h3{
+	margin-top: 6rem;
+}
+
+.snippets__info h3:first-of-type{
+	margin-top: 0;
+}
+
+.snippets__info p{
+	text-align: left;
+	margin-top: 1rem;
+}
+
+/* ACCESS */
+
+.access{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	text-align: center;
+	padding-bottom: 7rem;
+}
+
+/* WORKFLOW */
+
+.workflow{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding-bottom: 10rem;
+}
+
+.workflow__cards{
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 4rem;
+	text-align: center;
+	line-height: 1.7;
+	max-width: 90%;
+}
+
+.card h3{
+	margin-bottom: 2rem;
+}
+
+/* BRANDS */
+
+.brands{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	max-width: 90%;
+	padding: 3rem 0;
+	margin-bottom: 10rem;
+}
+
+/* DOWNLOAD SECTION */
+
+.download{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	line-height: 1.7;
+	padding-bottom: 14rem;
+	text-align: center;
+}
+
+.buttons{
+	margin-top: 2rem;
+}
+
+/* FOOTER */
+
+.footer{
+	display: flex;
+	align-items: center;
+	height: 18rem;
+	background-color: #F5F6F8;
+}
+
+.clipboard-logo img{
+	max-width: 6rem;
+}
+
+.links{
+	display: flex;
+	gap: 10rem;
+	margin: 0;
+}
+
+.link{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.link p{
+	margin: 0;
+	color: var(--darkGrayishBlue);
+	cursor: pointer;
+}
+
+.link p:hover{
+	color: var(--strongCyan);
+}
+
+.social-icons{
+	display: flex;
+	gap: 2.5rem ;
+}
+
+.fab{
+	font-size: 3rem;
+	transition: all .3s ease-in;
+	color: var(--darkGrayishBlue);
+}
+
+.fab:hover{
+	color: var(--strongCyan);
+}
