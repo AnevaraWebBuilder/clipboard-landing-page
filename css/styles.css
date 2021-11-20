@@ -53,6 +53,7 @@ h3{
 p, .btn{
 	font-size: 1.8rem;
 	color: var(--grayishBlue);
+	max-width: 65rem;
 }
 
 
@@ -153,6 +154,7 @@ p, .btn{
 	gap: 3rem;
 	text-align: center;
 	padding-bottom: 7rem;
+	line-height: 1.7;
 }
 
 /* WORKFLOW */
@@ -222,6 +224,10 @@ p, .btn{
 	margin: 0;
 }
 
+.links-mobile{
+	display: none;
+}
+
 .link{
 	display: flex;
 	flex-direction: column;
@@ -251,4 +257,208 @@ p, .btn{
 
 .fab:hover{
 	color: var(--strongCyan);
+}
+
+/* RESPONSIVE DESIGN */
+
+
+
+
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width: 1199px) and (min-width: 992px){
+
+
+.snippets__img{
+	position: relative;
+	left: -22rem;
+}
+
+.snippets__info{
+	position: relative;
+	right: 10rem;
+}
+
+
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width: 991px) and (min-width: 768px){
+
+
+.snippets_flexbox{
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
+
+.snippets__img{
+	left: 0;
+}
+
+.snippets__img img{
+	max-width: 60rem;
+}
+
+.access img{
+	max-width: 90%;
+}
+
+.brands{
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width: 767px){
+
+	/* HEADER */
+
+.header{
+	background-image: url("../img/bg-header-mobile.png");
+	background-repeat: no-repeat;
+	background-position: left -20rem top 0;
+}	
+
+.clipboard-logo-header img{
+	width: 10rem;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+p{
+	font-size: 1.7rem;
+}
+
+h2{
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.buttons{
+	display: flex;
+	flex-direction: column;
+}
+
+	/* SNIPPETS SECTION */
+
+
+.snippets p{
+	max-width: 85%;
+}
+
+.snippets_flexbox{
+	display: flex;
+	flex-direction: column;
+}
+
+.snippets__img{
+	left: 0;
+}
+
+.snippets__img img{
+	max-width: 30rem;
+}
+
+.snippets__info{
+	padding-top: 7rem;
+	text-align: center;
+}
+
+.snippets__info p{
+	text-align: center;
+}
+
+/* ACCESS SECTION */
+
+.access p{
+	max-width: 90%;
+	line-height: 1.7;
+}
+
+.access img{
+	max-width: 90%;
+}
+
+/* WORKFLOW SECTION */
+
+.workflow p{
+	text-align: center;
+}
+
+.workflow__cards{
+	display: flex;
+	flex-direction: column;
+}
+
+/* BRANDS */
+
+.brands{
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+}
+
+/* DOWNLOAD SECTION */
+
+.download{
+	max-width: 90%;
+}
+
+/* FOOTER */
+
+.footer{
+	display:flex;
+	flex-direction: column;
+	gap: 4rem;
+	height: auto;
+	padding: 6rem 0;
+}
+
+.links{
+	display: none;
+}
+
+.links-mobile{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.links-mobile p{
+	color: var(--darkGrayishBlue);
+}
+
+.links-mobile p:hover{
+	color: var(--strongCyan);
+}
+
+.social-icons{
+	gap: 4rem;
+}
+
+
 }
